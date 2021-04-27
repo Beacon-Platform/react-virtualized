@@ -61,8 +61,8 @@ export default function createDetectElementResize(nonce, hostWindow) {
       contract.scrollTop = contract.scrollHeight;
       expandChild.style.width = expand.offsetWidth + 1 + 'px';
       expandChild.style.height = expand.offsetHeight + 1 + 'px';
-      expand.scrollLeft = expand.scrollWidth;
-      expand.scrollTop = expand.scrollHeight;
+      expand.scrollLeft = expand.scrollWidth + 1;
+      expand.scrollTop = expand.scrollHeight + 1;
     };
 
     var checkTriggers = function(element) {
