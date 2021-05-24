@@ -39,7 +39,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && yarn run build && cd dist && git add ."
+      "pre-commit": "pretty-quick --staged && yarn run build && git add styles.css && cd dist && git add ."
     }
   },
   "files": [
